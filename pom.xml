@@ -20,13 +20,12 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <aggregate.report.dir>tests/target/site/jacoco-aggregate/jacoco.xml</aggregate.report.dir>
-  </properties>
-         <properties>
-                <!-- Optional URL to server. Default value is http://35.90.121.142:9000 -->
+           <!-- Optional URL to server. Default value is http://35.90.121.142:9000 -->
                 <sonar.host.url>
                   http://myserver:9000
                 </sonar.host.url>
-            </properties>
+  </properties>
+       
 
   <dependencies>
     <dependency>
