@@ -21,6 +21,12 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <aggregate.report.dir>tests/target/site/jacoco-aggregate/jacoco.xml</aggregate.report.dir>
   </properties>
+         <properties>
+                <!-- Optional URL to server. Default value is http://35.90.121.142:9000 -->
+                <sonar.host.url>
+                  http://myserver:9000
+                </sonar.host.url>
+            </properties>
 
   <dependencies>
     <dependency>
@@ -35,6 +41,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+        
 
   <build>
     <pluginManagement>
@@ -44,11 +51,15 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.1</version>
         </plugin>
+               <!-- https://mvnrepository.com/artifact/org.sonarsource.scanner.maven/sonar-maven-plugin -->
         <plugin>
-          <groupId>org.sonarsource.scanner.maven</groupId>
+          <groupId>org.sonarsource.scanner.maven</groupId>                 
           <artifactId>sonar-maven-plugin</artifactId>
-          <version>3.6.0.1398</version>
+       <version>3.9.1.2184</version>
         </plugin>
+               
+
+
         <plugin>
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
