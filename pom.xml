@@ -22,7 +22,7 @@
     <aggregate.report.dir>tests/target/site/jacoco-aggregate/jacoco.xml</aggregate.report.dir>
            <!-- Optional URL to server. Default value is http://35.90.121.142:9000 -->
                 <sonar.host.url>
-                  http://myserver:9000
+                 http://35.90.121.142:9000
                 </sonar.host.url>
   </properties>
        
